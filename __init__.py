@@ -1,12 +1,11 @@
 bl_info = {
     "name": "RizomUV Bridge MacOS",
     "author": "nguyendinhat",
-    "version": (1, 0),
+    "version": (1, 2),
     "blender": (3, 6, 3),
     "location": "View3D > Sidebar",
     "description": "Addon Connect Blender with RizomUV",
-    "doc_url": "https://github.com/nguyendinhat/Brigde_Maya_RizomUV_MacOS",
-    "tracker_url": "https://blendermarket.com/products/rizomuv-bridge",
+    "doc_url": "https://github.com/nguyendinhat/RizomUV_Bridge_for_Blender",
     "category": "UV",
 }
 
