@@ -1,0 +1,11 @@
+ZomSelect({PrimType="Edge", WorkingSet="Visible", Select=true, All=true})
+ZomMove({WorkingSet="Visible", PrimType="Edge", Geometrical="TransformIslandsByEdgePairs"})
+ZomWeld({PrimType="Edge", WorkingSet="Visible", Mode="All"})
+ZomResetTo3d({WorkingSet="Visible", Rescale=true})
+
+ZomSelect({PrimType="Edge", WorkingSet="Visible", Select=true, ResetBefore=true, ProtectMapName="Protect", FilterIslandVisible=true, Auto={Box={ActiveEdges={ "XPYP", "XPZP", "XPYM", "XPZM", "YPZP", "YMZP", "YMZM", "YPZM", "XMYP", "XMZP", "XMYM", "XMZM" }}, PipesCutter=holes, HandleCutter=handles, QuadLoopCutter=cylinders, StretchLimiter=stretch_bool, Quality=stretch, StoreCoordsUVW=true, FlatteningMode=2}})
+ZomCut({PrimType="Edge", WorkingSet="Visible"})
+ZomLoad({Data={CoordsUVWInternalPath="#Mesh.Tmp.AutoSelect.UVW "}})
+ZomIslandGroups({Mode="DistributeInTilesByBBox", WorkingSet="Visible", MergingPolicyString="A_ADD|AIB_ADD_A_VALUE_B|B_CLONE"})
+ZomIslandGroups({Mode="DistributeInTilesEvenly", WorkingSet="Visible", MergingPolicyString="A_ADD|AIB_ADD_A_VALUE_B|B_CLONE", UseTileLocks=true, UseIslandLocks=true})
+ZomPack({RootGroup="RootGroup", WorkingSet="Visible", ProcessTileSelection=false, RecursionDepth=1, Translate=true, LayoutScalingMode=2, Scaling={Mode=2}})
