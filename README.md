@@ -2,7 +2,7 @@
 addon Blender RizomUV to RizomUV
 ---
 ## Tutorial
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ttpwXcDZr3M/0.jpg)](https://www.youtube.com/watch?v=ttpwXcDZr3M)
+[![](https://markdown-videos-api.jorgenkh.no/youtube/ttpwXcDZr3M)](https://youtu.be/ttpwXcDZr3M)
 ---
 ## License 
 ---
