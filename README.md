@@ -2,7 +2,7 @@
 addon Blender RizomUV to RizomUV
 ---
 ## Tutorial
-[![](https://markdown-videos-api.jorgenkh.no/youtube/ttpwXcDZr3M)](https://youtu.be/ttpwXcDZr3M)
+[![RizomUV Bridge for Blender MacOS](http://img.youtube.com/vi/ttpwXcDZr3M/0.jpg)](http://www.youtube.com/watch?v=ttpwXcDZr3M "RizomUV Bridge for Blender MacOS")
 ---
 ## License 
 ---
@@ -10,4 +10,3 @@ MIT License
 
 ## About the author
 @nguyendinhat 🇻🇳
-https://www.youtube.com/watch?v=ttpwXcDZr3M&ab_channel=%C4%90%C3%ACnh%E1%BA%A4tNguy%E1%BB%85n
