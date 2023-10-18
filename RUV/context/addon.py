@@ -1,6 +1,5 @@
-
 import tempfile, os, bpy
-from bpy.props import (StringProperty, BoolProperty,IntProperty,FloatProperty, FloatVectorProperty, EnumProperty,PointerProperty,)
+from bpy.props import (StringProperty, BoolProperty,EnumProperty)
 from bpy.types import AddonPreferences
 
 from ..operators import utility

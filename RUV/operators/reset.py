@@ -1,7 +1,6 @@
 from bpy.types import Operator
 
 class OP_ResetAddon(Operator):
-    """Reset bridge addon settings to default values."""
 
     bl_description = "Reset Addon RUV settings"
     bl_idname = "ruv.bridge_config_reset"

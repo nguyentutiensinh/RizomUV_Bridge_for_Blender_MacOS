@@ -3,7 +3,7 @@ ZomMove({WorkingSet="Visible", PrimType="Edge", Geometrical="TransformIslandsByE
 ZomWeld({PrimType="Edge", WorkingSet="Visible", Mode="All"})
 ZomResetTo3d({WorkingSet="Visible", Rescale=true})
 
-ZomSelect({PrimType="Edge", WorkingSet="Visible", Select=true, ResetBefore=true, ProtectMapName="Protect", FilterIslandVisible=true, Auto={Skeleton={Open=true}, PipesCutter=holes, HandleCutter=handles, QuadLoopCutter=cylinders, StretchLimiter=stretch_bool, Quality=stretch, StoreCoordsUVW=true, FlatteningMode=0, FlatteningUnfoldParams={StopIfZeroMix=true, BorderIntersections=true, TriangleFlips=true}}})           
+ZomSelect({PrimType="Edge", WorkingSet="Visible", Select=true, ResetBefore=true, ProtectMapName="Protect", FilterIslandVisible=true, Auto={Skeleton={Open=true}, PipesCutter=holes, HandleCutter=handles, QuadLoopCutter=cylinders, StretchLimiter=stretch_bool, Quality=stretch, StoreCoordsUVW=true, FlatteningMode=0, FlatteningUnfoldParams={StopIfZeroMix=true, BorderIntersections=true, TriangleFlips=true}}})
 ZomCut({PrimType="Edge", WorkingSet="Visible"})
 ZomLoad({Data={CoordsUVWInternalPath="#Mesh.Tmp.AutoSelect.UVW "}})
 ZomIslandGroups({Mode="DistributeInTilesByBBox", WorkingSet="Visible", MergingPolicyString="A_ADD|AIB_ADD_A_VALUE_B|B_CLONE"})

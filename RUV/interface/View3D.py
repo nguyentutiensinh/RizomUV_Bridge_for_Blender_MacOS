@@ -11,16 +11,11 @@ class RUV_Panel(Panel):
     bl_label = "RizomUV Bridge"
     spaceTypes = ['VIEW_3D', 'IMAGE_EDITOR', 'NODE_EDITOR']
 
-
-
     def draw(self, context):
         props = context.window_manager.RUV_Context
         prefs = bpy.context.preferences.addons["RUV"].preferences
 
-        # addons = context.preferences.addons
-
         layout = self.layout
-
 
         box = layout.box()
         row = box.row(align=True)
@@ -64,7 +59,7 @@ class RUV_Panel(Panel):
             row = box.row(align=True)
             row.scale_y = 1.25
             row.prop(props, "uv_maps")
-            row.operator("ruv.fix_uvmaps", text="Fix UVSets", icon="FAKE_USER_ON")
+            row.operator(fixuvmap.OP_FixUVMaps.bl_idname, text="Fix UVSets", icon="FAKE_USER_ON")
 
             col = split.column(align=True)
             col.scale_y = 1.25

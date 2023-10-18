@@ -104,7 +104,6 @@ class OP_IMP(bpy.types.Operator):
         bpy.ops.object.mode_set(mode='OBJECT', toggle=False)
         bpy.ops.object.editmode_toggle()
         bpy.context.window.workspace = bpy.data.workspaces['UV Editing']
-        bpy.ops.mesh.select_all(action='SELECT')
-
-
+        bpy.context.scene.tool_settings.use_uv_select_sync = True
+        # bpy.ops.mesh.select_all(action='SELECT')
         return {'FINISHED'}

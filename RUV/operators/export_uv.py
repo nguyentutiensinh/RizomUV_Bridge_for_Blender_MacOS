@@ -4,7 +4,6 @@ from bpy.types import Operator
 from ..operators import utility
 from ..scripts import setup
 
-
 class OP_EXP(Operator):
     bl_idname = "ruv.exp"
     bl_label = "Export"
@@ -12,7 +11,6 @@ class OP_EXP(Operator):
 
     communicate: bpy.props.BoolProperty(name="Communicate", default=False)
     global RUV_PROCESS
-
 
     @classmethod
     def poll(cls, context):

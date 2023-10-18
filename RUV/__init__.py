@@ -1,16 +1,16 @@
 bl_info = {
-    "name": "RizomUV Bridge MacOS",
+    "name": "RUV Blender MacOS",
     "author": "nguyendinhat",
-    "version": (1, 2),
-    "blender": (3, 6, 3),
+    "version": (1, 6),
+    "blender": (3, 6, 4),
     "location": "View3D > Sidebar",
-    "description": "Addon Connect Blender with RizomUV",
-    "doc_url": "https://github.com/nguyendinhat/RizomUV_Bridge_for_Blender",
+    "description": "Addon Connect Blender with RizomUV MaOS",
+    "warning": "",
+    "doc_url": "https://github.com/nguyendinhat/RizomUV_Bridge_for_Blender_MacOS",
     "category": "UV",
 }
 
 import bpy
-
 from .context import addon, context
 from .operators import export_uv, import_uv, auto_uv, fixuvmap, load_recent, close_rizom, reset
 from .interface import View3D

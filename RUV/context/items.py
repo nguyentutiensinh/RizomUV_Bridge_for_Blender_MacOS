@@ -1,4 +1,3 @@
-
 import bpy
 
 def get_panels(self, context):  # pylint: disable=unused-argument

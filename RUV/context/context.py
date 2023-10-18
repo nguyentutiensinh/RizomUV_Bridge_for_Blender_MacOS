@@ -1,10 +1,9 @@
 import bpy
-from bpy.props import (StringProperty, BoolProperty,IntProperty,FloatProperty, FloatVectorProperty, EnumProperty,PointerProperty,)
+from bpy.props import (BoolProperty,EnumProperty)
 from bpy.types import PropertyGroup
 from ..context import items
 
 class RUV_Context(PropertyGroup):
-    """Property group to set the UI tabs."""
     prefs = bpy.context.preferences.addons["RUV"].preferences
     panel_enums: EnumProperty(
         items=(items.get_panels),
