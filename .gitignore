@@ -1,10 +1,16 @@
 # Byte-compiled / optimized / DLL files
 **/__pycache__/
+**/.github/
 *__pycache__/
 *.py[cod]
 *$py.class
 .DS_Store
+*.code-workspace
+*.zip
 
+.github/*
+*/.github/ISSUE_TEMPLATE
+*/.github/workflows
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

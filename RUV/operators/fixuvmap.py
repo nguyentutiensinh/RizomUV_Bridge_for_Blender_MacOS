@@ -1,4 +1,3 @@
-
 from bpy.types import Operator
 
 class OP_FixUVMaps(Operator):
