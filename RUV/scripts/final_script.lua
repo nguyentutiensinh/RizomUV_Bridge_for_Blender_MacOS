@@ -23,10 +23,10 @@ ZomSet({Path="Vars.Viewport.ColorMapIDDisplayMode", Value=1})
             ZomSet({Path="Prefs.Default.Packing.MaxScaling", Value=1e+06})
             ZomSet({Path="Prefs.PackOptions.MixScales", Value=true})
         
-ZomSet({Path="Prefs.CustomMousePreset", Value={ORBIT={MB="MMB", MODS="", KEYCODE=0}, ZOOM={MB="MMB", MODS="Alt-Ctrl", KEYCODE=0}, PAN={MB="MMB", MODS="Shift", KEYCODE=0}, DENSITY_PAINT={MB="LMB", MODS="", KEYCODE=0}, OPTIMIZE_PAINT={MB="LMB", MODS="", KEYCODE=0}, PIN_PAINT={MB="LMB", MODS="", KEYCODE=0}, PROTECT_PAINT={MB="LMB", MODS="", KEYCODE=0}, UNFOLD_PAINT={MB="LMB", MODS="", KEYCODE=0}, SPREAD={MB="LMB", MODS="", KEYCODE=0}, PINCH={MB="LMB", MODS="", KEYCODE=0}, DRAG={MB="LMB", MODS="", KEYCODE=0}, SELECT={MB="LMB", MODS="", KEYCODE=0}, ADD_SELECT={MB="LMB", MODS="Ctrl", KEYCODE=0}, DESELECT={MB="LMB", MODS="Alt", KEYCODE=0}, ADD_SELECT_SHORT_PATH={MB="LMB", MODS="Shift", KEYCODE=0}, SELECT_LOOP_PATH={MB="DLMB", MODS="", KEYCODE=0}, ADD_SELECT_LOOP_PATH={MB="DLMB", MODS="Ctrl", KEYCODE=0}, DESELECT_PATH={MB="DLMB", MODS="Alt", KEYCODE=0}, SELECT_TRANSLATE={MB="MMB", MODS="", KEYCODE=32}, SELECT_ROTATE={MB="RMB", MODS="", KEYCODE=32}, SELECT_SCALE={MB="LMB", MODS="", KEYCODE=32}, ADD_SELECT_TRANSLATE={MB="MMB", MODS="Ctrl", KEYCODE=32}, ADD_SELECT_ROTATE={MB="RMB", MODS="Ctrl", KEYCODE=32}, ADD_SELECT_SCALE={MB="LMB", MODS="Ctrl", KEYCODE=32}, TRANSLATE_ISLAND={MB="MMB", MODS="", KEYCODE=68}, ROTATE_ISLAND={MB="RMB", MODS="", KEYCODE=68}, SCALE_ISLAND={MB="LMB", MODS="", KEYCODE=68}, PREVIEW_SHORT_PATH={MB="", MODS="Shift", KEYCODE=0}}})ZomSet({Path="Prefs.MousePresetMode", Value=11})
+
 ZomLoad({File={Path="/var/folders/jf/pqnw30vs0wv45kz43ft65bn80000gn/T/export_temp.fbx", ImportGroups=true, XYZUVW=true, UVWProps=true}, __UpdateGUIFilePath=true, __Focus=true})
-target_map = "UVMap"
-map_list = {'UVMap'}
+target_map = "Cube"
+map_list = {'Cube'}
 branch = false
 cylinders = true
 handles = true
@@ -145,5 +145,5 @@ else
     trunk = 0
 end
 
-ZomUvset({Mode="SetCurrent", Name="UVMap"})
+ZomUvset({Mode="SetCurrent", Name="Cube"})
 ZomSave({File={Path="/var/folders/jf/pqnw30vs0wv45kz43ft65bn80000gn/T/export_temp.fbx", UVWProps=true, FBX={UseUVSetNames=true}}, __UpdateUIObjFileName=true})

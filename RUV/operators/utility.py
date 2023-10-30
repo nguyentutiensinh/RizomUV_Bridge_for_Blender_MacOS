@@ -80,8 +80,8 @@ def verify_objects(self, act_obj, objs):
     if not actobj_uvmap_names:
         self.report({"WARNING"}, f'{act_obj.name}: No UV maps exist')
         bpy.ops.ruv.fix_uvmaps()
-        actobj_uvmap_names = [uvmap.name for uvmap in act_obj.data.uv_layers]
-        # return valid
+        self.report({"INFO"}, f'{act_obj.name}: has been fixed UV Maps, please export again!')
+        return valid
     # Check that all selected objects have the same UV maps.
     for obj in objs:
         obj_uvmap_names = [uvmap.name for uvmap in obj.data.uv_layers]
