@@ -1,7 +1,7 @@
 bl_info = {
     "name": "RUV Blender MacOS",
     "author": "nguyendinhat",
-    "version": (1, 6),
+    "version": (1, 7),
     "blender": (3, 6, 3),
     "location": "View3D > Sidebar",
     "description": "Addon Connect Blender with RizomUV MaOS",

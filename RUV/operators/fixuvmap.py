@@ -15,7 +15,7 @@ class OP_FixUVMaps(Operator):
         act_obj_map_names = [uvmap.name for uvmap in act_obj.data.uv_layers]
 
         if not act_obj_map_names:
-            act_obj.data.uv_layers.new("UVMap",'UVMap','fix UV Map','FAKE_USER_ON')
+            act_obj.data.uv_layers.new(name=act_obj.name, do_init=True)
 
         for uvmap in act_obj.data.uv_layers:
             uvmap.name = uvmap.name.replace(".", "_")

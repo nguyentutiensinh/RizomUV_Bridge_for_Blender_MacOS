@@ -18,35 +18,6 @@ def convert_td(tex_den, unit):
 
     return output
 
-def get_Shortcut(type):
-        match type:
-            case "0":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=0})"""
-            case "1":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=1})"""
-            case "2":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=2})"""
-            case "3":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=3})"""
-            case "4":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=4})"""
-            case "5":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=5})"""
-            case "6":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=6})"""
-            case "7":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=7})"""
-            case "8":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=8})"""
-            case "9":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=9})"""
-            case "10":
-                return """ZomSet({Path="Prefs.MousePresetMode", Value=10})"""
-            case "11":
-                return """ZomSet({Path="Prefs.CustomMousePreset", Value={ORBIT={MB="MMB", MODS="", KEYCODE=0}, ZOOM={MB="MMB", MODS="Alt-Ctrl", KEYCODE=0}, PAN={MB="MMB", MODS="Shift", KEYCODE=0}, DENSITY_PAINT={MB="LMB", MODS="", KEYCODE=0}, OPTIMIZE_PAINT={MB="LMB", MODS="", KEYCODE=0}, PIN_PAINT={MB="LMB", MODS="", KEYCODE=0}, PROTECT_PAINT={MB="LMB", MODS="", KEYCODE=0}, UNFOLD_PAINT={MB="LMB", MODS="", KEYCODE=0}, SPREAD={MB="LMB", MODS="", KEYCODE=0}, PINCH={MB="LMB", MODS="", KEYCODE=0}, DRAG={MB="LMB", MODS="", KEYCODE=0}, SELECT={MB="LMB", MODS="", KEYCODE=0}, ADD_SELECT={MB="LMB", MODS="Ctrl", KEYCODE=0}, DESELECT={MB="LMB", MODS="Alt", KEYCODE=0}, ADD_SELECT_SHORT_PATH={MB="LMB", MODS="Shift", KEYCODE=0}, SELECT_LOOP_PATH={MB="DLMB", MODS="", KEYCODE=0}, ADD_SELECT_LOOP_PATH={MB="DLMB", MODS="Ctrl", KEYCODE=0}, DESELECT_PATH={MB="DLMB", MODS="Alt", KEYCODE=0}, SELECT_TRANSLATE={MB="MMB", MODS="", KEYCODE=32}, SELECT_ROTATE={MB="RMB", MODS="", KEYCODE=32}, SELECT_SCALE={MB="LMB", MODS="", KEYCODE=32}, ADD_SELECT_TRANSLATE={MB="MMB", MODS="Ctrl", KEYCODE=32}, ADD_SELECT_ROTATE={MB="RMB", MODS="Ctrl", KEYCODE=32}, ADD_SELECT_SCALE={MB="LMB", MODS="Ctrl", KEYCODE=32}, TRANSLATE_ISLAND={MB="MMB", MODS="", KEYCODE=68}, ROTATE_ISLAND={MB="RMB", MODS="", KEYCODE=68}, SCALE_ISLAND={MB="LMB", MODS="", KEYCODE=68}, PREVIEW_SHORT_PATH={MB="", MODS="Shift", KEYCODE=0}}})ZomSet({Path="Prefs.MousePresetMode", Value=11})"""
-            case default:
-                return """ZomSet({Path="Prefs.CustomMousePreset", Value={ORBIT={MB="MMB", MODS="", KEYCODE=0}, ZOOM={MB="MMB", MODS="Alt-Ctrl", KEYCODE=0}, PAN={MB="MMB", MODS="Shift", KEYCODE=0}, DENSITY_PAINT={MB="LMB", MODS="", KEYCODE=0}, OPTIMIZE_PAINT={MB="LMB", MODS="", KEYCODE=0}, PIN_PAINT={MB="LMB", MODS="", KEYCODE=0}, PROTECT_PAINT={MB="LMB", MODS="", KEYCODE=0}, UNFOLD_PAINT={MB="LMB", MODS="", KEYCODE=0}, SPREAD={MB="LMB", MODS="", KEYCODE=0}, PINCH={MB="LMB", MODS="", KEYCODE=0}, DRAG={MB="LMB", MODS="", KEYCODE=0}, SELECT={MB="LMB", MODS="", KEYCODE=0}, ADD_SELECT={MB="LMB", MODS="Ctrl", KEYCODE=0}, DESELECT={MB="LMB", MODS="Alt", KEYCODE=0}, ADD_SELECT_SHORT_PATH={MB="LMB", MODS="Shift", KEYCODE=0}, SELECT_LOOP_PATH={MB="DLMB", MODS="", KEYCODE=0}, ADD_SELECT_LOOP_PATH={MB="DLMB", MODS="Ctrl", KEYCODE=0}, DESELECT_PATH={MB="DLMB", MODS="Alt", KEYCODE=0}, SELECT_TRANSLATE={MB="MMB", MODS="", KEYCODE=32}, SELECT_ROTATE={MB="RMB", MODS="", KEYCODE=32}, SELECT_SCALE={MB="LMB", MODS="", KEYCODE=32}, ADD_SELECT_TRANSLATE={MB="MMB", MODS="Ctrl", KEYCODE=32}, ADD_SELECT_ROTATE={MB="RMB", MODS="Ctrl", KEYCODE=32}, ADD_SELECT_SCALE={MB="LMB", MODS="Ctrl", KEYCODE=32}, TRANSLATE_ISLAND={MB="MMB", MODS="", KEYCODE=68}, ROTATE_ISLAND={MB="RMB", MODS="", KEYCODE=68}, SCALE_ISLAND={MB="LMB", MODS="", KEYCODE=68}, PREVIEW_SHORT_PATH={MB="", MODS="Shift", KEYCODE=0}}})ZomSet({Path="Prefs.MousePresetMode", Value=11})"""
-
 
 class ScriptSetup:
     def __init__(self, context, target_map, map_list=[]):
@@ -97,39 +68,6 @@ class ScriptSetup:
             ZomSet({Path="Prefs.Default.Packing.MaxScaling", Value=1e+06})
             ZomSet({Path="Prefs.PackOptions.MixScales", Value=true})
         """
-        shortcutMode = """
-            ZomSet({Path="Prefs.MousePresetMode", Value=11})
-            ZomSet({Path="Prefs.CustomMousePreset",
-            Value={ORBIT={MB="MMB", MODS="", KEYCODE=0},
-            ZOOM={MB="MMB", MODS="Alt-Ctrl", KEYCODE=0},
-            PAN={MB="MMB", MODS="Shift", KEYCODE=0},
-            DENSITY_PAINT={MB="LMB", MODS="", KEYCODE=0},
-            OPTIMIZE_PAINT={MB="LMB", MODS="", KEYCODE=0},
-            PIN_PAINT={MB="LMB", MODS="", KEYCODE=0},
-            PROTECT_PAINT={MB="LMB", MODS="", KEYCODE=0},
-            UNFOLD_PAINT={MB="LMB", MODS="", KEYCODE=0},
-            SPREAD={MB="LMB", MODS="", KEYCODE=0},
-            PINCH={MB="LMB", MODS="", KEYCODE=0},
-            DRAG={MB="LMB", MODS="", KEYCODE=0},
-            SELECT={MB="LMB", MODS="", KEYCODE=0},
-            ADD_SELECT={MB="LMB", MODS="Ctrl", KEYCODE=0},
-            DESELECT={MB="LMB", MODS="Alt", KEYCODE=0},
-            ADD_SELECT_SHORT_PATH={MB="LMB", MODS="Shift", KEYCODE=0},
-            SELECT_LOOP_PATH={MB="DLMB", MODS="", KEYCODE=0},
-            ADD_SELECT_LOOP_PATH={MB="DLMB", MODS="Ctrl", KEYCODE=0},
-            DESELECT_PATH={MB="DLMB", MODS="Alt", KEYCODE=0},
-            SELECT_TRANSLATE={MB="MMB", MODS="", KEYCODE=32},
-            SELECT_ROTATE={MB="RMB", MODS="", KEYCODE=32},
-            SELECT_SCALE={MB="LMB", MODS="", KEYCODE=32},
-            ADD_SELECT_TRANSLATE={MB="MMB", MODS="Ctrl", KEYCODE=32},
-            ADD_SELECT_ROTATE={MB="RMB", MODS="Ctrl", KEYCODE=32},
-            ADD_SELECT_SCALE={MB="LMB", MODS="Ctrl", KEYCODE=32},
-            TRANSLATE_ISLAND={MB="MMB", MODS="", KEYCODE=68},
-            ROTATE_ISLAND={MB="RMB", MODS="", KEYCODE=68},
-            SCALE_ISLAND={MB="LMB", MODS="", KEYCODE=68},
-            PREVIEW_SHORT_PATH={MB="", MODS="Shift", KEYCODE=0}}})
-            ZomSavePreferences(none)
-        """
 
 
         if self.prefs.script == "FLATTEN":
@@ -138,7 +76,7 @@ class ScriptSetup:
         else:
             mesh_load = f'ZomLoad({{File={{Path="{self.file_path}", ImportGroups=true, XYZUVW=true, UVWProps=true}}, __UpdateGUIFilePath=true, __Focus=true}})'
 
-        script.write("\n" + suffix + "\n" + uv_order + "\n" + "\n" +colorMap + "\n" +displayMode + "\n" +packingMode + "\n" + get_Shortcut(self.props.shortcut) + "\n" + mesh_load)
+        script.write("\n" + suffix + "\n" + uv_order + "\n" + "\n" +colorMap + "\n" +displayMode + "\n" +packingMode + "\n" + "\n" + mesh_load)
 
     def set_variables(self, script):
 

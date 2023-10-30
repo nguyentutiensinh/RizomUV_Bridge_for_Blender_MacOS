@@ -1,6 +1,7 @@
 
 import bpy, os, json
 from ..scripts import setup
+from ..operators import fixuvmap
 
 def get_json(dictionary, key, **kwargs):
 
@@ -77,8 +78,10 @@ def verify_objects(self, act_obj, objs):
     actobj_uvmap_names = [uvmap.name for uvmap in act_obj.data.uv_layers]
     # Check if any UV maps exist.
     if not actobj_uvmap_names:
-        self.report({"ERROR"}, f'{act_obj.name} {("errors", "nomap")}')
-        return valid
+        self.report({"WARNING"}, f'{act_obj.name}: No UV maps exist')
+        bpy.ops.ruv.fix_uvmaps()
+        actobj_uvmap_names = [uvmap.name for uvmap in act_obj.data.uv_layers]
+        # return valid
     # Check that all selected objects have the same UV maps.
     for obj in objs:
         obj_uvmap_names = [uvmap.name for uvmap in obj.data.uv_layers]

@@ -93,28 +93,12 @@ def script_check(self, context):  # pylint:
 
 def opt_AutoIMP(self,context):
     return [
-        ('N_AutoIMP','Manual','Manually imported UVs','MODIFIER',0),
-        ('Y_AutoIMP','Auto','Automatically imported after closing RizomUV','CONSTRAINT',1),
+        ('Y_AutoIMP','Auto','Automatically imported after closing RizomUV','CONSTRAINT',0)
+        ('N_AutoIMP','Manual','Manually imported UVs','MODIFIER',1),
     ]
 
 def preference_save(self, context):  # pylint: disable=unused-argument
     bpy.ops.wm.save_userpref()
-
-def shortcut(self, context):
-    return [
-        ("11",'Blender mix 3DsMax',""),
-        ("0",'Rizom',""),
-        ("1",'Rizom Legacy',""),
-        ("2",'Maya',""),
-        ("3",'3DsMax',""),
-        ("4",'Softimage',""),
-        ("5",'Rhino',""),
-        ("6",'Cinemar4D',""),
-        ("7",'Blender',""),
-        ("8",'ZBrush',""),
-        ("9",'Modo',""),
-        ("10",'RMB Orbit',""),
-    ]
 
 def panel_width_update(self, context):
     bpy.context.area.tag_redraw()

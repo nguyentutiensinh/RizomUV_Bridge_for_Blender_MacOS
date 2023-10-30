@@ -36,8 +36,3 @@ class RUV_Context(PropertyGroup):
         update=items.uv_map_update,
         description="activemap",
     )
-    shortcut: bpy.props.EnumProperty(
-        name="Short",
-        items=(items.shortcut),
-        default=0
-    )

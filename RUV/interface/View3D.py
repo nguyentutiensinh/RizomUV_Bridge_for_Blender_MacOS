@@ -148,15 +148,6 @@ class RUV_Panel(Panel):
             row.scale_y = 1.25
             row.prop(prefs, "image_path")
 
-            # --------------------------------------#
-            box = layout.box()
-            row = box.row(align=True)
-            row.label(text="Shortcut:", icon="HAND")
-            row = box.row(align=True)
-            row.scale_y = 1.25
-            row.prop(props, "shortcut")
-            # --------------------------------------#
-
             box = layout.box()
 
             row = box.row(align=True)
@@ -177,8 +168,6 @@ class RUV_Panel(Panel):
 
             row.prop(prefs, "tex_units", text="")
 
-            # --------------------------------------#
-            # --------------------------------------#
 
             box = layout.box()
             row = box.row(align=True)
