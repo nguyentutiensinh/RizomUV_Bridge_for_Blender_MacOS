@@ -93,8 +93,8 @@ def script_check(self, context):  # pylint:
 
 def opt_AutoIMP(self,context):
     return [
-        ('Y_AutoIMP','Auto','Automatically imported after closing RizomUV','CONSTRAINT',0)
-        ('N_AutoIMP','Manual','Manually imported UVs','MODIFIER',1),
+        ('Y_AutoIMP','Auto','Automatically imported after closing RizomUV','CONSTRAINT',0),
+        ('N_AutoIMP','Manual','Manually imported UVs','MODIFIER',1)
     ]
 
 def preference_save(self, context):  # pylint: disable=unused-argument
